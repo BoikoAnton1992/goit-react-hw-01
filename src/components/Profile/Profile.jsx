@@ -1,4 +1,6 @@
-export default function Profile(avatar, username, tag, location, stats) {
+export default function Profile(props) {
+  const { avatar, username, tag, location, stats } = props;
+
   return (
     <div>
       <div>
@@ -10,7 +12,7 @@ export default function Profile(avatar, username, tag, location, stats) {
       <ul>
         <li>
           <span>user</span>
-          <span>{stats.followers}</span>
+          <span>{stats.followers}</span>{' '}
         </li>
         <li>
           <span>Views</span>
