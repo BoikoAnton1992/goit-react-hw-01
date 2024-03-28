@@ -1,11 +1,11 @@
 export default function Profile(props) {
-  const { avatar, username, tag, location, stats } = props;
+  const { image, name, tag, location, stats } = props;
 
   return (
     <div>
       <div>
-        <img src={avatar} alt="User avatar" />
-        <p>{username}</p>
+        <img src={image} alt="User avatar" />
+        <p>{name}</p>
         <p>@{tag}</p>
         <p>{location}</p>
       </div>
