@@ -3,7 +3,7 @@ import FriendList from '../FriendList/FriendList';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import userData from '../Data/userData.json';
 import friendListData from '../Data/friedListData.json';
-import TransactionData from '../Data/TransactionData.json';
+import transactionData from '../Data/transactionData.json';
 
 export default function App() {
   return (
@@ -15,8 +15,8 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friends={friendListData.friends} />
-      <TransactionHistory items={TransactionData.transactions} />
+      <FriendList friends={friendListData} />
+      <TransactionHistory items={transactionData} />
     </>
   );
 }
